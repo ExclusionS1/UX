@@ -6,22 +6,29 @@
   h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #303030;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  #contact h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
     font-weight: 600;
     margin-bottom: 30px;
   }
   h2:hover {
-  color: lime;
+  color: red;
   }
   h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #303030;
+    color: white;
     font-weight: 400;
     margin-bottom: 30px;
   }  
   .jumbotron {
-    background: linear-gradient(to top, #0000ff 0%, #ffffff 100%);
+    background: linear-gradient(to top,black 0%, #ffffff 100%);
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
@@ -33,11 +40,11 @@
     background-color: #f6f6f6;
   }
   .logo-small {
-    color: blue;
+    color: white;
     font-size: 50px;
   }
   .logo {
-    color: blue;
+    color: white;
     font-size: 200px;
     margin: 30px 40px;
   }
@@ -72,12 +79,19 @@
     font-style: normal;
   }
   .panel {
-    border: 1px solid blue; 
+    border: 3px solid grey; 
     border-radius:0 !important;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;  
+    background-color: black;
   }
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  #pricing .panel p, .panel-footer h3{
+    color:white;
+  }
+  #pricing .panel-footer h3{
+    color:black;
   }
   .panel-footer .btn:hover {
     border: 1px solid #f4511e;
@@ -85,14 +99,19 @@
     color: #f4511e;
   }
   .panel-heading {
-    color: #fff !important;
-    background: linear-gradient(to top, #0000ff 0%, #ffffff 100%);
+    color: white !important;
+    background: linear-gradient(to top,grey 0%, black 100%);
+    background-color: black;
     padding: 10px 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+  }
+  .panel-heading a:active{ 
+    background-color: red;
+    color:black;
   }
   .panel-footer {
     background-color: white !important;
@@ -111,7 +130,7 @@
   }
   .navbar {
     margin-bottom: 0;
-    background-color: blue;
+    background-color: linear-gradient(to top,black 0%,red 100%);
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -121,20 +140,22 @@
     font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
+    color: white !important;
+    background-color: black;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #f4511e !important;
     font-weight: bold;
-    background-color: #fff !important;
+    background-color: black !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a:hover {
-    color: lime !important;
+    color:yellow !important;
     font-weight: bolder;
+    background-color: black;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
-    color: #fff !important;
+    color: black !important;
   }
   footer .glyphicon {
     font-size: 20px;
@@ -142,15 +163,15 @@
     color: #f4511e;
   }
   footer p {
-    color: blue;
+    color: black;
   }
   #myfooter {
-    background: linear-gradient(to top, #0000ff 0%, #ffffff 100%);
+    background: black;
   }
   .btn-info {
-    color: #fff;
-    background-color: blue;
-    border-color: lime;
+    color: grey;
+    background-color:white;
+    border-color: Black;
 }
   .slideanim {visibility:hidden;}
   .slide {
@@ -185,22 +206,23 @@
     float: right;
   }
   h2.well {
-    background: linear-gradient(to top, #0000ff 0%, #ffffff 100%);
+    background: linear-gradient(to top, white 0%,black 100%);
     color:white;
   }
   h2.well:hover {
-     color:yellowgreen;
+     color:yellow;
   }
   .dropdown-menu {
-    background-color: blue;
+    color: white;
+    background-color: black;
     }
     .dropdown-menu li.active a {
-    color: #fff !important;
-    background-color:blue !important;
+    color: white !important;
+    background-color:red   !important;
     }
     .dropdown-menu li a:hover {
-    color: #fff !important;
-    background-color: blue !important;
+    color: black !important;
+    background-color:white !important;
     }
 
     img.myimg {
@@ -212,3 +234,27 @@
       width: 150px;
       margin-left: 15px;
   }
+
+  .color{
+    background-color: black;
+    color: white;
+    border-color: grey;
+    border-style: double;
+    border-width: 10px;
+    border-start-start-radius: 10px;
+  }
+  .color2{
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+  }
+  .border{
+    border-color: white;
+    border-style: double;
+    border-width: 10px;
+    border-start-start-radius:20px;
+  }
+.side{
+  width: "200px";
+  height: "300px";
+}
